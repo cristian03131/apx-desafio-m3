@@ -4,7 +4,7 @@ Este es el tercer desafío del Nivel 2 de APX, donde el objetivo es recrear un d
 
 ## 🚀 Demo
 Puedes ver el sitio funcionando aquí: 
-👉 [Link en progreso]
+👉 [https://cristian03131.github.io/apx-desafio-m3/]
 
 ## 🛠️ Tecnologías utilizadas
 * **HTML5:** Arquitectura semántica (`header`, `main`, `section`).
