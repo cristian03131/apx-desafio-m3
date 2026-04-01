@@ -1,0 +1,366 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #DBDBDB;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wrapper{
+    
+    width: 100%;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+    padding: 18px 10px;
+}
+img {
+    max-width: 100%;
+    height: auto; /* Esto evita que la imagen de Marce deforme el ancho */
+}
+
+.hero__imagen{
+    width: 318px;
+    height: 300px;
+}
+
+.header__menu-button{
+   margin-right: 10px;
+}
+
+.header__logo{
+    width: 54px;
+    height: 50px;
+    
+}
+
+.header__button{
+    width: 36px;
+    height: 32px;
+    
+
+}
+
+.hero__container{
+    
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 76px;
+    height: 530px;
+    
+}
+
+.hero__titulo{
+    
+    
+    
+    width: 88.6%;
+    text-align: center;
+    line-height: 48px;
+    letter-spacing: -1px;
+    padding-left:  42px;
+   
+   font-weight: 700;
+   font-size: 3rem;
+}
+
+.hero__titulo, .profile__titulo{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero__imagen{
+  padding-top: 58px;
+  
+}
+
+.profile{
+    background-color: #000000;
+    color: white;
+}
+
+.profile__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 538px;
+    height: auto; /* Deja que el contenido mande */
+    padding-top: 60px;
+    padding-bottom: 70px;
+    gap: 50px; /* Vamos a controlar los espacios con márgenes para ser precisos */
+    
+    
+}
+
+.profile__titulo{
+    
+    text-align: center;
+ 
+  
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -2-px;
+  
+}
+
+.profile__parrafo{
+    width: 80%; 
+    max-width: 330px; 
+    text-align: justify;
+    margin: 0;
+    /* CAMBIO: Quitá el padding-left para que el centrado sea real */
+    padding-left: 0; 
+    
+    
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5; /* Aumentá un poco esto para que el texto sea más legible */
+}
+
+.profile__check-verde{
+    
+    margin-top: 10px;
+    
+}
+
+
+.services__container{
+   width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Esto es lo que realmente centra */
+    gap: 80px;           /* Espacio uniforme entre cada CARD */
+    padding: 60px 0;
+    
+}
+
+
+.services__titulo{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    padding: 0;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: -2px;
+    
+}
+
+.services__imagen{
+   /* IMPORTANTE: Quitamos el padding-left */
+    padding-left: 0; 
+    padding-top: 0;
+    /* Usamos margen para separar, no padding para desplazar */
+    margin-top: 20px; 
+    width: 160px; /* O el tamaño de tu icono en Figma */
+    height: auto;
+}
+
+.services__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+.services__parrafo{
+ /* IMPORTANTE: Quitamos el height fijo */
+ 
+    height: auto; 
+    width: 75%; /* Un ancho relativo para que respire en los bordes */
+    max-width: 320px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.contact{
+    background-color: #141414;
+    
+}
+
+.contact__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    height: 660px;
+    gap: 25px;
+    
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los bloques en la pantalla */
+    width: 100%;
+    padding-top: 40px;
+    gap: 25px; /* Distancia uniforme entre cada campo de texto */
+}
+
+.contact__field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los labels a la izquierda de su propia caja */
+    width: 89.33%; /* Le damos el ancho que antes tenían los inputs sueltos */
+    gap: 8px; /* Distancia pequeña y exacta entre Label e Input */
+}
+
+
+
+.contact__button{
+   width: 89.33%; /* Mantiene el ancho armónico con los campos */
+    height: 45px;
+    background-color: #FFD953;
+    border-radius: 4px;
+    border: none; /* Quitamos el borde por defecto */
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 35px; /* Un pequeño aire extra antes de terminar el form */
+    
+}
+
+.contact__name, 
+.contact__email {
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box; /* Para que el padding no rompa el tamaño */
+}
+
+.contact__mensaje {
+    width: 100%;
+    height: 113px;
+    box-sizing: border-box;
+   
+}
+
+.contact__label{
+   
+    color: #FAFAFA;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.contact__titulo{
+    color: #FAFAFA;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    
+}
+
+.contact__name, 
+.contact__email
+ {
+    padding-left: 10px; /* Empuja el placeholder y el texto hacia la derecha */
+    box-sizing: border-box; /* ¡Súper importante! */
+}
+
+.contact__mensaje{
+    text-align: center;
+    padding-top: 45px;
+}
+
+.contact__mensaje::placeholder{
+    text-align: center;
+}
+
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+
+.footer{
+    width: 100%;
+    height: 493px;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 8px;
+    background-color: #DBDBDB;
+  
+    
+}
+
+.footer__container{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.footer__logo-marce{
+    padding-top: 40px;
+    
+}
+
+.footer__descripción{
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: 0;
+    color: #2C2C2C;
+}
+
+.footer__logo-descripción{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer__iconos-redes-sociales{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+   
+    
+}
+
+.footer__red-social-item{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ 
+ text-decoration: none;
+}
+
+.footer__descripción{
+ text-decoration: none;
+ font-family: roboto;
+ font-weight: 400;
+ font-size: 1rem;
+ line-height: 1;
+ letter-spacing: 0;
+ padding-left: 5px;
+}

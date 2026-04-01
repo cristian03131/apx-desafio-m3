@@ -17,4 +17,4 @@ Puedes ver el sitio funcionando aquí:
 * Configuración de despliegue automatizado con GitHub Pages.
 
 ## 👤 Autor
-* **Tu Nombre** - Cristian Landeira [(https://github.com/cristian03131)]
+Cristian Landeira [(https://github.com/cristian03131)]

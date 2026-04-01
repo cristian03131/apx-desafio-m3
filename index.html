@@ -9,9 +9,9 @@
 <body>
     <header class="header">
       <div class="wrapper header__container">
-        <img src="images/logo.png" alt="logo marce">
+        <img src="images/logo.png" class="header__logo" alt="logo marce">
         <button class="header__menu-button">
-            <img src="images/burger.png" alt="Abrir menu">
+            <img src="images/burger.png" class="header__button" alt="Abrir menu">
         </button>
       </div>
     </header>
@@ -20,7 +20,7 @@
         <section class="hero">
             <div class="wrapper hero__container">
                 <h1 class="hero__titulo">Bienvenidxs a mi site</h1>
-                <img src="images/foto.png" class="hero__imagen" alt="foto marce">
+                <img src="images/foto-cris.jpg" class="hero__imagen" alt="foto marce">
             </div>
         </section>
 
@@ -28,30 +28,32 @@
             <div class="wrapper profile__container">
                 <h2 class="profile__titulo">Soy Cristian</h2>
                 <p class="profile__parrafo">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ut harum delectus odit illo atque. Id neque totam, iure ut debitis, eligendi amet quas reiciendis molestiae sequi placeat suscipit ullam!
+                   Analista de Sistemas (IFTS11) con foco en desarrollo Full Stack. Actualmente profundizo mi formación técnica en la Licenciatura en Desarrollo de Videojuegos (UNICABA) y mediante especializaciones en APX y Talento Tech (Front-end JS). Mi perfil combina una sólida base analítica con la capacidad de implementar soluciones escalables.
                 </p>
                 <img src="images/check.png" class="profile__check-verde" alt="check verde">
             </div>
         </section>
 
         <section class="services">
+            
             <div class="wrapper services__container">
-                 <h2 class="services__titulo">Mis servicios</h2>  
+                  <h2 class="services__titulo">Mis servicios</h2> 
 
                 <div class="services__card">
                   <img src="images/desktop.png" class="services__imagen" alt="imagen de computadora de escritorio">
                   <h3 class="services__subtitulo">Hago Cosas</h3>
                   <p class="services__parrafo">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam accusamus ex similique delectus ut consequuntur, quia est excepturi quisquam voluptates impedit velit eaque officia distinctio qui quaerat, hic rem consectetur.
+                     Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus. Integer ut iaculis augue, sit amet tincidunt ex. In eleifend justo et sodales semper. Mauris nec tortor lectus. Curabitur nec ultricies dolor.
                    </p>
 
                 </div>
+           
                 
                 <div class="services__card">
-                  <img src="images/desktop.png" class="services__imagen" alt="imagen de computadora de escritorio">
+                  <img src="images/desktop.png" class="services__imagen dos" alt="imagen de computadora de escritorio">
                   <h3 class="services__subtitulo">Y mas cosas</h3>
                   <p class="services__parrafo">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam accusamus ex similique delectus ut consequuntur, quia est excepturi quisquam voluptates impedit velit eaque officia distinctio qui quaerat, hic rem consectetur.
+                     Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus. Integer ut iaculis augue, sit amet tincidunt ex. In eleifend justo et sodales semper. Mauris nec tortor lectus. Curabitur nec ultricies dolor.
                   </p>
 
                 </div>
@@ -60,38 +62,69 @@
                   <img src="images/desktop.png" class="services__imagen" alt="imagen de computadora de escritorio">
                   <h3 class="services__subtitulo">Y también otras cosas</h3>
                   <p class="services__parrafo">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam accusamus ex similique delectus ut consequuntur, quia est excepturi quisquam voluptates impedit velit eaque officia distinctio qui quaerat, hic rem consectetur.
+                     Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus. Integer ut iaculis augue, sit amet tincidunt ex. In eleifend justo et sodales semper. Mauris nec tortor lectus. Curabitur nec ultricies dolor.
                   </p>
                 </div>
                 
             </div>
         </section>
 
-        <section class="contact">
-            <div class="wrapper contact__container">
-                <h2 class="contact__titulo">Escribime</h2>
-                <label for="nombre" class="contact__label">Nombre</label>
-                <input type="text" id="nombre" class="contact__name">
+    <section class="contact">
+       <div class="wrapper contact__container">
 
-                <label for="email" class="contact__label">Email</label>
-                <input type="text" id="email" class="contact__email">
+        <h2 class="contact__titulo">Escribime</h2>
+        
+        <form class="contact__form">
 
-                <label for="textarea" class="contact__label">Mensaje</label>
-                <textarea name="textarea" id="textarea" class="contact__mensaje"></textarea>
-
-                <button class="contact__button">Enviar</button>
-
+            <div class="contact__field">
+                <label for="nombre" class="contact__label text-uppercase">Nombre</label>
+                <input type="text" id="nombre" class="contact__name" placeholder="Tu nombre">
             </div>
-        </section>
+            
+            <div class="contact__field">
+                <label for="email" class="contact__label text-uppercase">Email</label>
+                <input type="email" id="email" class="contact__email" placeholder="nombre@email.com">
+            </div>
+
+            <div class="contact__field">
+                <label for="textarea" class="contact__label ">Mensaje</label>
+                <textarea name="textarea" id="textarea" class="contact__mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
+            </div>
+            
+            <button type="submit" class="contact__button">Enviar</button>
+
+        </form>
+
+       </div>
+    </section>
     </main>
 
     <footer class="footer">
         <div class="wrapper footer__container">
-            <img src="images/logo.png" class="footer__logo-marce" alt="logo del footer">
-            <p class="footer__descripcion">© 2021 Marce</p>
-            <img src="images/Instagram.png" class="footer__logo-instagram" alt="ir a instagram">Instagram
-            <img src="images/Linkedin.png" class="footer__logo-linkedin" alt="ir a linkedin">Linkedin
-            <img src="images/Github.png" class="footer__logo-github" alt="ir a github">Github
+
+            <div class="footer__logo-descripción">
+                 <img src="images/logo.png" class="footer__logo-marce" alt="logo del footer">
+                  <p class="footer__descripcion">© 2021 Marce</p>
+            </div>
+            
+            <div class="footer__iconos-redes-sociales">
+
+                <a href="#" class="footer__red-social-item">
+                <img src="images/Instagram.png" class="footer__logo-instagram" alt="ir a instagram">
+                <h3 class="footer__descripción">Instagram</h3>
+                </a>
+
+                <a href="#" class="footer__red-social-item">
+                <img src="images/Linkedin.png" class="footer__logo-linkedin" alt="ir a linkedin">
+                <h3 class="footer__descripción">Linkedin</h3>
+                </a>
+
+                <a href="#" class="footer__red-social-item">
+                <img src="images/Github.png" class="footer__logo-github" alt="ir a github">
+                <h3 class="footer__descripción">Github</h3>
+                </a>
+            </div>
+            
         </div>
     </footer>
     
