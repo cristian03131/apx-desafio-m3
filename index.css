@@ -14,6 +14,10 @@
     overflow: hidden;
 }
 
+.header__enlaces{
+    display: none;
+}
+
 .wrapper{
     
     width: 100%;
@@ -91,22 +95,28 @@ img {
     color: white;
 }
 
-.profile__container{
+.profile__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 538px;
-    height: auto; /* Deja que el contenido mande */
-    padding-top: 60px;
-    padding-bottom: 70px;
-    gap: 50px; /* Vamos a controlar los espacios con márgenes para ser precisos */
-    
-    
+    height: auto;
+    padding: 60px 20px 70px 20px; /* Agregamos padding lateral */
+    gap: 30px; /* Reducimos un poco el gap general */
+}
+
+.profile__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el título y el párrafo internamente */
+    text-align: center;  /* Asegura que el texto esté centrado */
+    width: 100%;         /* Que ocupe todo el ancho disponible */
+    max-width: 532px;
 }
 
 .profile__titulo{
-    
+    margin-bottom: 40px;
     text-align: center;
  
   
@@ -119,7 +129,7 @@ img {
 
 .profile__parrafo{
     width: 80%; 
-    max-width: 330px; 
+    
     text-align: justify;
     margin: 0;
     /* CAMBIO: Quitá el padding-left para que el centrado sea real */
@@ -364,3 +374,115 @@ img {
  letter-spacing: 0;
  padding-left: 5px;
 }
+
+
+@media(min-width: 768px){
+
+    
+    .header__logo{
+        width: 150px;
+        height: 100px;
+        padding-top: 15px;
+        padding-left: 70px;
+        
+    }
+
+    .header__button{
+        display: none;
+    }
+
+    .header__enlaces{
+        display: flex;
+        gap:50px;
+        padding-right: 65px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 100%;
+        letter-spacing: 0;
+        
+    }
+
+    a{
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .hero__container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero__titulo{
+        padding-top: 66px;
+        padding-left: 80px;
+        width: 22%;
+        text-align: justify;
+    }
+
+    h1{
+        
+        display: flex;
+        justify-content: flex-start;
+        font-family: Open sans-serif;
+        font-weight: 700;
+        
+    }
+
+    .hero__imagen{
+        padding-right: 70px;
+        width: 435px;
+        height: 395px;
+    }
+
+    .profile__container{
+        display: flex;
+        flex-direction: row-reverse;
+        
+        justify-content: center;
+        align-items: center;
+        
+        /* Aumentá este valor hasta que lo veas igual al Figma */
+        gap: 80px; 
+        
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+   
+.profile__content {
+        display: flex;
+        flex-direction: column;
+        
+        /* ESTO MUEVE TODO (Título y Párrafo) A LA IZQUIERDA */
+        align-items: flex-start; 
+        
+        /* ESTO ALINEA EL TEXTO POR DENTRO */
+        text-align: left; 
+        
+        max-width: 532px; /* Tu nuevo ancho estirado */
+}
+    
+
+    .profile__check-verde{
+        width: 211px;
+        height: auto;
+    }
+
+    .profile__titulo{
+        
+    }
+
+ 
+    
+
+   
+}
+
+
+
+
+
+
+
