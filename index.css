@@ -45,10 +45,47 @@ img {
    margin-right: 10px;
 }
 
-.header__logo {
-    width: 54px;
-    height: auto; /* Dejá que mantenga la proporción nativa */
-    display: block;
+/* Reseteo del enlace contenedor */
+.header__logo-container {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Contenedor del logo */
+.logo-cris-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px; /* Espacio compacto entre círculo y texto */
+    width: fit-content;
+}
+
+/* El círculo verde del header (escalado a tu contenedor actual) */
+.logo-cris-header__circulo {
+    width: 44px;
+    height: 44px;
+    border: 2.5px solid #22C55E; /* Tu verde exacto */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+/* El monitor de la compu */
+.logo-cris-header__svg {
+    width: 22px;
+    height: 22px;
+    color: #070707; /* Mismo color verde */
+}
+
+.logo-cris-header__texto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 0.75rem; /* Un toque más chico para que no compita con el menú */
+    letter-spacing: 1px;
+    color: #2C2C2C;
+    text-transform: uppercase;
 }
 
 .header__menu-button {
@@ -95,7 +132,12 @@ img {
 }
 
 .hero__imagen{
-  padding-top: 58px;
+    padding-top: 58px;
+ width: 318px;
+    height: 300px;
+    object-fit: cover; /* Truco clave: recorta y acomoda la imagen para que llene el espacio sin estirarse */
+    object-position: center 20%; /* Asegura que tu cara quede perfectamente centrada */
+    border-radius: 8px; /* Opcional: un mini redondeado en las esquinas por si querés que suavice con el diseño */
   
 }
 
@@ -125,7 +167,7 @@ img {
 }
 
 .profile__titulo{
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     text-align: center;
  
   
@@ -137,24 +179,24 @@ img {
 }
 
 .profile__parrafo{
-    width: 80%; 
+    width: 95%; 
     
-    text-align: justify;
+   
     margin: 0;
     /* CAMBIO: Quitá el padding-left para que el centrado sea real */
     padding-left: 0; 
     
+    text-align: left;
     
-    
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 1rem;
-    line-height: 1.5; /* Aumentá un poco esto para que el texto sea más legible */
+    line-height: 1.6; /* Aumentá un poco esto para que el texto sea más legible */
 }
 
 .profile__check-verde{
     
-    margin-top: 10px;
+    margin-top: 20px;
     
 }
 
@@ -166,6 +208,7 @@ img {
     align-items: center; /* Esto es lo que realmente centra */
     gap: 80px;           /* Espacio uniforme entre cada CARD */
     padding: 60px 0;
+   
     
 }
 
@@ -204,6 +247,8 @@ img {
 }
 
 .services__cards{
+    
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -363,6 +408,15 @@ img {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    padding-top: 40px;
+}
+
+.footer__descripción-iconos{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0;
 }
 
 .footer__iconos-redes-sociales{
@@ -382,14 +436,53 @@ img {
  text-decoration: none;
 }
 
-.footer__descripción{
- text-decoration: none;
+.footer__descripción-iconos{
+ 
  font-family: roboto;
  font-weight: 400;
  font-size: 1rem;
  line-height: 1;
  letter-spacing: 0;
  padding-left: 5px;
+ color: #2C2C2C
+}
+
+
+   /* Contenedor del nuevo logo */
+.logo-cris {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el nombre abajo del círculo */
+    gap: 8px;            /* Espacio exacto entre el círculo y la palabra CRIS */
+    width: fit-content;
+}
+
+/* El círculo exterior (Estilo Figma) */
+.logo-cris__circulo {
+    width: 35px;   /* Antes era 60px */
+    height: 35px;  /* Antes era 60px */
+    border: 2.5px solid #22C55E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+/* El icono SVG de la computadora */
+.logo-cris__svg {
+    width: 18px;
+    height: 18px;
+    color: #0b0c0c; /* El mismo verde para el icono interior */
+}
+
+/* El texto de tu nombre */
+.logo-cris__texto {
+    font-family: 'Roboto';
+    font-weight: 1000;
+    font-size: 1.1rem;
+    letter-spacing: 0; /* Le da ese aire moderno y separado de marca */
+    color: #2C2C2C;      /* Color oscuro para el texto */
+    text-transform: uppercase;
 }
 
 
@@ -618,7 +711,107 @@ img {
     letter-spacing: 0;
   }
 
+   .footer{
+    width: 100%;
+    max-width: 1500px;
+    height: 346px;
+    
+   }
+
+   .footer__container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+   }
+
+   .footer__logo-descripción{
    
+    padding-top: 85px;
+    padding-left: 60px;
+   }
+
+   .footer__descripcion{
+    font-family: 'Roboto';
+    font-size: 400;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    
+    color: #2C2C2C;
+   
+   }
+
+   .footer__logo-marce{
+    width: 100px ;
+   }
+
+   .footer__iconos-redes-sociales{
+    padding-top: 90px;
+    padding-right: 180px;
+    gap: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .footer__descripción-iconos{
+    font-family:'Roboto';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0;
+    padding-left: 5px;
+    color: #2C2C2C;
+   }
+
+   .linkedin{
+    padding-right: 10px;
+   }
+   .github{
+     padding-right: 20px;
+   }
+
+
+
+   /* Contenedor del nuevo logo */
+.logo-cris {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el nombre abajo del círculo */
+    gap: 8px;            /* Espacio exacto entre el círculo y la palabra CRIS */
+    width: fit-content;
+}
+
+/* El círculo exterior (Estilo Figma) */
+.logo-cris__circulo {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #22C55E; /* Poné acá el código de tu color verde exacto */
+    border-radius: 50%;        /* Lo hace perfectamente redondo */
+    display: flex;
+    align-items: center;       /* Centra el icono verticalmente */
+    justify-content: center;   /* Centra el icono horizontalmente */
+    background-color: transparent;
+}
+
+/* El icono SVG de la computadora */
+.logo-cris__svg {
+    width: 30px;
+    height: 30px;
+    color: #0b0c0c; /* El mismo verde para el icono interior */
+}
+
+/* El texto de tu nombre */
+.logo-cris__texto {
+    font-family: 'Roboto';
+    font-weight: 1000;
+    font-size: 1.5rem;
+    letter-spacing: 2px; /* Le da ese aire moderno y separado de marca */
+    color: #2C2C2C;      /* Color oscuro para el texto */
+    text-transform: uppercase;
+}
 }
 
 
