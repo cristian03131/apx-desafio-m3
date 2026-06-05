@@ -33,7 +33,7 @@
 }
 img {
     max-width: 100%;
-    height: auto; /* Esto evita que la imagen de Marce deforme el ancho */
+    height: auto; 
 }
 
 .hero__imagen{
@@ -60,11 +60,11 @@ img {
     width: fit-content;
 }
 
-/* El círculo verde del header (escalado a tu contenedor actual) */
+/* El círculo verde del header */
 .logo-cris-header__circulo {
     width: 44px;
     height: 44px;
-    border: 2.5px solid #22C55E; /* Tu verde exacto */
+    border: 2.5px solid #22C55E; 
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -76,7 +76,7 @@ img {
 .logo-cris-header__svg {
     width: 22px;
     height: 22px;
-    color: #070707; /* Mismo color verde */
+    color: #070707; 
 }
 
 .logo-cris-header__texto {
@@ -98,14 +98,13 @@ img {
     align-items: center;
 }
 
-/* 5. Ajuste a la imagen dentro del botón */
+
 .header__button {
     width: 36px;
-    height: auto; /* Fluido */
+    height: auto; 
     display: block;
 }
 .hero__container{
-    
     text-align: center;
     margin: 0 auto;
     padding-top: 76px;
@@ -135,13 +134,13 @@ img {
     padding-top: 58px;
  width: 318px;
     height: 300px;
-    object-fit: cover; /* Truco clave: recorta y acomoda la imagen para que llene el espacio sin estirarse */
-    object-position: center 20%; /* Asegura que tu cara quede perfectamente centrada */
-    border-radius: 8px; /* Opcional: un mini redondeado en las esquinas por si querés que suavice con el diseño */
+    object-fit: cover; /*recorta y acomoda la imagen para que llene el espacio sin estirarse */
+    object-position: center 20%; /* Asegura que mi cara quede perfectamente centrada */
+    border-radius: 8px; /* se aplica un borde redondeado en las esquinas para que suavice con el diseño */
   
 }
 
-.profile{
+#profile{
     background-color: #000000;
     color: white;
 }
@@ -153,8 +152,8 @@ img {
     align-items: center;
     min-height: 538px;
     height: auto;
-    padding: 60px 20px 70px 20px; /* Agregamos padding lateral */
-    gap: 30px; /* Reducimos un poco el gap general */
+    padding: 60px 20px 70px 20px; /* Agrego padding lateral */
+    gap: 30px; /* Reduzco un poco el gap general */
 }
 
 .profile__content {
@@ -180,18 +179,14 @@ img {
 
 .profile__parrafo{
     width: 95%; 
-    
-   
     margin: 0;
-    /* CAMBIO: Quitá el padding-left para que el centrado sea real */
     padding-left: 0; 
-    
     text-align: left;
-    
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 1rem;
-    line-height: 1.6; /* Aumentá un poco esto para que el texto sea más legible */
+    letter-spacing: 0.3px;
+    line-height: 1.6; 
 }
 
 .profile__check-verde{
@@ -205,7 +200,7 @@ img {
    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Esto es lo que realmente centra */
+    align-items: center; 
     gap: 80px;           /* Espacio uniforme entre cada CARD */
     padding: 60px 0;
    
@@ -215,9 +210,9 @@ img {
 
 .services__titulo{
     display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 100%;
     padding: 0;
@@ -229,12 +224,10 @@ img {
 }
 
 .services__imagen{
-   /* IMPORTANTE: Quitamos el padding-left */
     padding-left: 0; 
     padding-top: 0;
-    /* Usamos margen para separar, no padding para desplazar */
     margin-top: 20px; 
-    width: 160px; /* O el tamaño de tu icono en Figma */
+    width: 160px; 
     height: auto;
 }
 
@@ -247,8 +240,6 @@ img {
 }
 
 .services__cards{
-    
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -257,8 +248,6 @@ img {
 }
 
 .services__parrafo{
- /* IMPORTANTE: Quitamos el height fijo */
- 
     height: auto; 
     width: 75%; /* Un ancho relativo para que respire en los bordes */
     max-width: 320px;
@@ -266,7 +255,7 @@ img {
     line-height: 1.5;
 }
 
-.contact{
+#contact{
     background-color: #141414;
     
 }
@@ -296,7 +285,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Alinea los labels a la izquierda de su propia caja */
-    width: 89.33%; /* Le damos el ancho que antes tenían los inputs sueltos */
+    width: 89.33%; 
     gap: 8px; /* Distancia pequeña y exacta entre Label e Input */
 }
 
@@ -307,7 +296,7 @@ img {
     height: 45px;
     background-color: #FFD953;
     border-radius: 4px;
-    border: none; /* Quitamos el borde por defecto */
+    border: none; 
     font-weight: 700;
     font-size: 1rem;
     cursor: pointer;
@@ -351,7 +340,7 @@ img {
 .contact__email
  {
     padding-left: 10px; /* Empuja el placeholder y el texto hacia la derecha */
-    box-sizing: border-box; /* ¡Súper importante! */
+    box-sizing: border-box; 
 }
 
 .contact__mensaje{
@@ -448,7 +437,7 @@ img {
 }
 
 
-   /* Contenedor del nuevo logo */
+/* Contenedor del nuevo logo */
 .logo-cris {
     display: flex;
     flex-direction: column;
@@ -459,8 +448,8 @@ img {
 
 /* El círculo exterior (Estilo Figma) */
 .logo-cris__circulo {
-    width: 35px;   /* Antes era 60px */
-    height: 35px;  /* Antes era 60px */
+    width: 44px;   
+    height: 44px;  
     border: 2.5px solid #22C55E;
     border-radius: 50%;
     display: flex;
@@ -470,18 +459,18 @@ img {
 }
 /* El icono SVG de la computadora */
 .logo-cris__svg {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     color: #0b0c0c; /* El mismo verde para el icono interior */
 }
 
 /* El texto de tu nombre */
-.logo-cris__texto {
+.logo-cris__texto, .logo-cris-header__texto {
     font-family: 'Roboto';
     font-weight: 1000;
     font-size: 1.1rem;
-    letter-spacing: 0; /* Le da ese aire moderno y separado de marca */
-    color: #2C2C2C;      /* Color oscuro para el texto */
+    letter-spacing: 0;     
+    color: #2C2C2C;      
     text-transform: uppercase;
 }
 
@@ -489,13 +478,11 @@ img {
 @media(min-width: 768px){
 
     
-    .header__logo{
-        width: 150px;
-        height: auto;
-        padding-top: 15px;
-        padding-left: 70px;
-        
+    .logo-cris-header{
+        padding-left: 40px;
     }
+
+    
 
     .header__button{
         display: none;
@@ -545,24 +532,19 @@ img {
         height: 395px;
     }
 
-    .profile{
+    #profile{
       padding: 40px 40px;
     }
 
     .profile__container{
         display: flex;
         flex-direction: row-reverse;
-        
         justify-content: center;
         align-items: center;
-        
-        /* Aumentá este valor hasta que lo veas igual al Figma */
         gap: 80px; 
-        
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        
         padding-left: 210px;
     }
 
@@ -570,15 +552,9 @@ img {
 .profile__content {
         display: flex;
         flex-direction: column;
-        
-        /* ESTO MUEVE TODO (Título y Párrafo) A LA IZQUIERDA */
         align-items: flex-start; 
-        
-        /* ESTO ALINEA EL TEXTO POR DENTRO */
         text-align: left; 
-        
-        max-width: 700px; /* Tu nuevo ancho estirado */
-        
+        max-width: 700px;     
 }
 
 .profile__titulo{
@@ -591,21 +567,22 @@ img {
 
 .profile__parrafo{
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;  /* Los 24px clavados que marca el Figma (si tu base es 16px) */
-    line-height: 1.3;   /* El aire perfecto para que no se encimen los renglones */
+    font-weight: 300;
+    font-size: 1.5rem; 
+    line-height: 1.3;   
     letter-spacing: 0;
     margin-top: -15px;
-    color: #FAFAFA;     /* Acordate de sumarle el color blanco/grisáceo del diseño si no venía heredado */
+    color: #FAFAFA;     
 }
 
 
 
 
     .profile__check-verde{
-        width: 211px;
-        height: auto;
-        padding-bottom: 100px;
+        width: 230px;
+        height: 230px;
+        padding-right: 10px;
+        
     }
 
     
@@ -627,7 +604,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    max-width: 350px; /* El ancho exacto del Figma */
+    max-width: 350px; 
     width: 100%; 
     margin: 0 auto;
     text-align: center;
@@ -660,7 +637,7 @@ img {
     letter-spacing: 0;
   }
 
-  .contact{
+  #contact{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -775,7 +752,7 @@ img {
 
 
 
-   /* Contenedor del nuevo logo */
+/* Contenedor del nuevo logo */
 .logo-cris {
     display: flex;
     flex-direction: column;
@@ -784,8 +761,8 @@ img {
     width: fit-content;
 }
 
-/* El círculo exterior (Estilo Figma) */
-.logo-cris__circulo {
+
+.logo-cris__circulo,.logo-cris-header__circulo {
     width: 60px;
     height: 60px;
     border: 3px solid #22C55E; /* Poné acá el código de tu color verde exacto */
@@ -797,18 +774,18 @@ img {
 }
 
 /* El icono SVG de la computadora */
-.logo-cris__svg {
+.logo-cris__svg, .logo-cris-header__svg {
     width: 30px;
     height: 30px;
-    color: #0b0c0c; /* El mismo verde para el icono interior */
+    color: #0b0c0c; 
 }
 
 /* El texto de tu nombre */
-.logo-cris__texto {
+.logo-cris__texto, .logo-cris-header__texto {
     font-family: 'Roboto';
     font-weight: 1000;
     font-size: 1.5rem;
-    letter-spacing: 2px; /* Le da ese aire moderno y separado de marca */
+    letter-spacing: 2px; 
     color: #2C2C2C;      /* Color oscuro para el texto */
     text-transform: uppercase;
 }
