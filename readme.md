@@ -24,4 +24,4 @@ Si quieres explorar el código o correr el proyecto localmente, sigue estos paso
 
 1. Clona el repositorio:
    ```bash
-   git clone [https://github.com/cristian03131/apx-desafio-m3.git](https://github.com/cristian03131/apx-desafio-m3.git)
+   git clone https://github.com/cristian03131/apx-desafio-m3.git
